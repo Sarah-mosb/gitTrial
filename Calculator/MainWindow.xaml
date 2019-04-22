@@ -1,0 +1,47 @@
+﻿<Window x:Class="Calculator.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Calculator"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="250" Width="300">
+    <Grid GotMouseCapture="GetElement">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Button x:Name="b1" Grid.Column="1"   Grid.Row="2">1</Button>
+        <Button  x:Name="b2" Grid.Column="2" Grid.Row="2">2</Button>
+        <Button x:Name="b3" Grid.Column="3" Grid.Row="2">3</Button>
+        <Button x:Name="b4" Grid.Column="1" Grid.Row="3">4</Button>
+        <Button x:Name="b5" Grid.Column="2" Grid.Row="3">5</Button>
+        <Button x:Name="b6" Grid.Column="3" Grid.Row="3">6</Button>
+        <Button x:Name="b7"  Grid.Column="1" Grid.Row="4">7</Button>
+        <Button x:Name="b8" Grid.Column="2" Grid.Row="4">8</Button>
+        <Button x:Name="b9" Grid.Column="3" Grid.Row="4">9</Button>
+        <Button x:Name="b0" Grid.Column="2" Grid.Row="5">0</Button>
+        <Button x:Name="bPlus" Grid.Column="0" Grid.Row="2">+</Button>
+        <Button x:Name="bTimes" Grid.Column="0" Grid.Row="4">*</Button>
+        <Button x:Name="bminus" Grid.Column="0" Grid.Row="3" Click="Subtract">_</Button>
+        <Button x:Name="bDiv" Grid.Column="0" Grid.Row="5">/</Button>
+        <Button x:Name="bEqual" Grid.Column="1" Grid.Row="5">=</Button>
+        <Button x:Name="clear" Grid.Column="4" Grid.Row="5">CE</Button>
+
+        <TextBox x:Name="txtBox" Grid.Column="0" Grid.ColumnSpan="4" Grid.Row="0" IsReadOnly="True" FontSize="30" TextAlignment="Right"></TextBox>
+        
+
+
+
+</Grid>
+</Window>
