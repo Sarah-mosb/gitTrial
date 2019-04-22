@@ -39,7 +39,7 @@ namespace Calculator
         {
             Button btn = ((Button)e.OriginalSource);
             string val= btn.Content.ToString();
-          
+            int x;
             if(val=="*"||val=="/"||val=="+"||val=="_")
             {
                 operand = val;
