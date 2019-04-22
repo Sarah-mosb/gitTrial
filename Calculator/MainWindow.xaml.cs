@@ -40,6 +40,7 @@ namespace Calculator
             Button btn = ((Button)e.OriginalSource);
             string val= btn.Content.ToString();
             int x;
+            int y;
             if(val=="*"||val=="/"||val=="+"||val=="_")
             {
                 operand = val;
